@@ -11,9 +11,6 @@ public class bijele {
 
         for (int i = 0; i < found.length; i++) {
             found[i] = in.nextInt();
-        }
-
-        for (int i = 0; i < found.length; i++) {
             System.out.print(pieces[i] - found[i] + " ");
         }
     }
