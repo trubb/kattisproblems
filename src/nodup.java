@@ -1,44 +1,32 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class nodup {
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
-
         String str = in.nextLine();
-
         String[] stra = str.split("\\s+");
-        in.close();
-
-
-/*        for (int i = 0; i < stra.length; i++) { // make sure we actually got the string
-            System.out.println(i + " " + stra[i]);
-
-        }
-*/
-
+        String word;
         boolean dupe = false;
+        ArrayList<String> words = new ArrayList<>();
 
-        for (int i = 0; i < stra.length ; i++) {
-            String word = stra[i];
-
-            if (dupe) {
+        for (int i = 0; i <= stra.length - 1; i++) {
+            word = stra[i];
+            if (words.contains(word)) {
+                dupe = true;
                 break;
             } else {
-                for (int j = i + 1; j < stra.length; j++) {
-                    if (word.equals(stra[j])) {
-                        System.out.println("no");
-                        dupe = true;
-                    } else {
-                        System.out.println("yes");
-                    }
-
-                }
+                words.add(word);
             }
-
         }
 
-
+        if (dupe) {
+            System.out.println("no");
+        } else {
+            System.out.println("yes");
+        }
     }
 
 }
