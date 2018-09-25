@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
-public class judgingmoose {
+public class aaah {
 
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        int left = in.nextInt();
-        int right = in.nextInt();
 
-
+        String jon = in.nextLine();
+        String doc = in.nextLine();
 
     }
 
