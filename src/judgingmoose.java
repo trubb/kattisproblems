@@ -9,6 +9,13 @@ public class judgingmoose {
         int right = in.nextInt();
 
 
+        if (left == 0 && right == 0) {
+            System.out.println("Not a moose");
+        } else if (left == right) {
+            System.out.println("Even " + 2*right );
+        } else {
+            System.out.println("Odd " + Math.max(left, right) * 2);
+        }
 
     }
 
