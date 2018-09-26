@@ -9,6 +9,12 @@ public class aaah {
         String jon = in.nextLine();
         String doc = in.nextLine();
 
+        if (doc.length() > jon.length()) {
+            System.out.println("no");
+        } else {
+            System.out.println("go");
+        }
+
     }
 
 }
